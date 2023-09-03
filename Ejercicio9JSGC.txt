@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float n1;
+  float n2;
+  float n3;
+  float n4;
+  float promedio;
+  cout << "Ingrese las siguientes notas" << endl;
+  cout << "Primer previo(25%) = ";
+  cin  >> n1;
+  cout << "Segundo previo(25%) = ";
+  cin >> n2;
+  cout << "Tercera nota(20%) = ";
+  cin >> n3;
+  cout << "Evaluación final(30%) = ";
+  cin >> n4;
+  promedio = (n1*0.25)+(n2*0.25)+(n3*0.20)+(n4*0.30);
+  cout << "Promedio = " << promedio;
+  return 0;
+}

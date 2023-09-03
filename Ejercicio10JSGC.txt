@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int n;
+  int i;
+  int nn = 1;
+  float tn;
+  float total;
+  float prom;
+  float por;
+  cout << "Cuantas notas quiere ingresar? ";
+  cin >> n;
+  for (i=1 ; i<=n ; i++){
+    cout << "Ingrese la nota " << nn << " = ";
+    cin >> tn;
+    nn++;
+    total = total + tn;
+  }
+  prom = total / n;
+  cout << "El promedio de las notas sin el porcentaje es " << prom << endl;
+  por = prom * 0.20;
+  cout << "El promedio con el porcentaje del 20% es " << por;
+  return 0;
+}

@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+  double c;
+  double f;
+  double k;
+  int t;
+  double v;
+  cout << "Cuál temperatura quiere ingresar?" << endl;
+  cout << "Celcius(1) --- Farenheit(2) --- Kelvin(3) ";
+  cin >> t;
+  cout << "Ingrese el valor númerico ";
+  cin >> v;
+  if(t == 1) {
+    c = v;
+    f = (c * 9/5) + 32;
+    k = c + 273.15;
+  }else if(t == 2) {
+    f = v;
+    c =(f - 32) * 5/9;
+    k = (f - 32) * 5/9 + 273.15;
+  }else if(t == 3) {
+    k = v;
+    c = k - 273.15;
+    f = (k - 273.15) * 9/5 + 32;
+  }else {
+        cout << "Ingrese un tipo de temperatura válido" << endl;
+  }
+cout << "Celsius = " << c << endl;
+cout << "Fahrenheit = " << f << endl;
+cout << "Kelvin = " << k << endl;
+return 0;
+}

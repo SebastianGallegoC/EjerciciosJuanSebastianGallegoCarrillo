@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float libras;
+  float gramos;
+  float kilog;
+  cout << "Ingrese un peso en libras, para pasarlo a kilogramos y gramos ";
+  cin >> libras;
+  gramos = libras * 453.6;
+  kilog = libras / 2.205;
+  cout << "gramos = " << gramos << "g" << endl; 
+  cout << "Kilogramos = " << kilog << "kg";
+  return 0;
+}
